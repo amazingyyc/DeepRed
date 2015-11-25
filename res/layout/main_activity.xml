@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deepcolor.deepred.MainActivity" >
+
+    <!-- 摄像头预览区域 -->
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <com.deepcolor.deepred.view.CameraView 
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+        </com.deepcolor.deepred.view.CameraView>
+
+        <!-- 对焦控件 -->
+	    <com.deepcolor.deepred.view.FocusView
+	        android:id="@+id/focus_view"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:background="@null"
+	        android:src="@drawable/focus"
+	        
+	        android:visibility="invisible">
+	   </com.deepcolor.deepred.view.FocusView>
+	    
+	    <!-- 挡板控件 当切换前后摄像头的时候 负责高斯模糊操作 android:background="#ff4545"
+       	    android:src="@drawable/ic_launcher"-->
+
+		<ImageView 
+	        android:id="@+id/baffle_bg_view"
+	        android:layout_width="match_parent"
+       	    android:layout_height="match_parent"
+       	    android:layout_alignParentTop="true"
+        	android:layout_alignParentLeft="true"
+       	    
+       	    android:visibility="gone">
+       	    </ImageView>
+
+	    <ImageView 
+	        android:id="@+id/baffle_view"
+	        android:layout_width="match_parent"
+       	    android:layout_height="match_parent"
+       	    android:layout_alignParentTop="true"
+        	android:layout_alignParentLeft="true"
+       	    
+       	    android:visibility="gone">
+	    </ImageView>
+    </RelativeLayout>
+    
+    <!-- 顶部标题栏区域 包括 livephoto开关和  闪光灯开启的状态栏-->
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    
+    android:layout_alignParentTop="true">
+	    
+        <com.deepcolor.deepred.view.LiveCheckBox
+            android:id="@+id/live_photo_check_box"
+            android:layout_width="@dimen/live_photo_check_box_size"
+       	    android:layout_height="@dimen/live_photo_check_box_size"
+       	    android:layout_margin="20dp"
+       	    
+       	    android:background="@drawable/live_photo_selector"
+            android:button="@null"
+       	    
+       	    android:checked="true"
+       	    
+       	    android:layout_centerInParent="true" />
+        
+        
+        <com.deepcolor.deepred.view.FlashView 
+            android:id="@+id/flash_view"
+            android:layout_width="@dimen/flash_view_size"
+       	    android:layout_height="@dimen/flash_view_size"
+       	    android:layout_margin="20dp"
+       	    
+       	    android:background="@null"
+            android:src="@drawable/flash_off"
+       	    
+       	    android:layout_centerVertical="true"
+       	    android:layout_alignParentRight="true"/>
+    </RelativeLayout> 
+    
+    <!-- 底部区域 包括拍摄按钮 和 小图片的预览 -->
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    
+    android:layout_alignParentBottom="true">
+        <!-- 拍摄按钮背景 -->
+        <ImageButton
+	        android:layout_width="@dimen/shot_button_bg_size"
+       	    android:layout_height="@dimen/shot_button_bg_size"
+       	    android:src="@drawable/shot_bg"
+       	    android:background="@null"
+       	    
+       	    android:layout_centerInParent="true"/>
+        
+        
+	    <!-- 拍摄按钮 -->
+        <ImageButton
+            android:id="@+id/shot_button"
+	        android:layout_width="@dimen/shot_button_size"
+       	    android:layout_height="@dimen/shot_button_size"
+       	    android:layout_marginTop="40dp"
+       	    android:layout_marginBottom="40dp"
+       	    android:src="@drawable/shot_selector"
+       	    android:background="@null"
+       	    
+       	    android:layout_centerInParent="true"/>
+	</RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

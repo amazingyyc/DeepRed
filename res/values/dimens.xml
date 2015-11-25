@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 拍摄按钮的大小 -->
+<!--     <dimen name="shot_button_width">76dp</dimen> -->
+<!--     <dimen name="shot_button_height">76dp</dimen> -->
+    <dimen name="shot_button_size">76dp</dimen>
+    <dimen name="shot_button_radius">38dp</dimen>
+    <dimen name="shot_button_bg_size">80dp</dimen>
+    <dimen name="shot_button_bg_radius">40dp</dimen>
+    
+    <!-- 小图的预览控件大小 -->
+    <dimen name="pic_preview_view_size">70dp</dimen>
+    
+    <!-- live photo开关大小 -->
+    <dimen name="live_photo_check_box_size">34dp</dimen>
+    
+    <!-- 闪光灯的大小 -->
+    <dimen name="flash_view_size">34dp</dimen>
+
+</resources>

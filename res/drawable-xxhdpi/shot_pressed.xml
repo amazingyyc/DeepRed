@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 圆角 -->
+    <corners
+        android:radius="@dimen/shot_button_radius"/><!-- 设置圆角半径 -->
+
+    <!-- 大小 -->
+    <size
+        android:width="@dimen/shot_button_size"
+        android:height="@dimen/shot_button_size"/><!-- 宽度和高度 -->
+        
+	<!--     填充 -->   
+	<solid
+           android:color="@color/shot_button_pressed"/><!--填充的颜色 -->
+
+
+    
+</shape>

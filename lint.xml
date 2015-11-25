@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="UseValueOf" severity="ignore" />
+    <issue id="WrongCall" severity="ignore" />
+</lint>
