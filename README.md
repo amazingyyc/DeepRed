@@ -4,7 +4,7 @@ livephoto on android
 在android实现类似于LivePhoto的功能
 
 ## 原理
-见博客：
+见博客：http://www.cnblogs.com/amazingyyc/p/4995539.html
 <br>
 ##demo
 当点击“拍摄按钮”的同时点击网页的“启动”按钮，保留了前后1.5s左右的视频
